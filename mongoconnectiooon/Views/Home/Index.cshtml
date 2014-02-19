@@ -1,0 +1,22 @@
+﻿@model mongoconnectiooon.Models.Pessoa
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Inserir</h2>
+
+@{
+   using(Html.BeginForm("Inserir", "Home")){
+<br/>
+@Html.LabelFor(x => x.Nome)
+@Html.TextBoxFor(x => x.Nome)
+<br />
+@Html.LabelFor(x => x.Sobrenome)
+@Html.TextBoxFor(x => x.Sobrenome)
+<br/>
+<input type="submit" value="Save" /> 
+} 
+    
+}
+
+
